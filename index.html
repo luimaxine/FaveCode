@@ -5,7 +5,8 @@
     <title>GHelpline</title>
     <link rel="shortcut icon" href="logo.png">
         <style type="text/css">
-
+        
+/*navigation specifications*/
 .toptable {
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     border-collapse: collapse; /*share borders*/
@@ -20,25 +21,27 @@
 }
 
 .toptable th:hover{
-    background-color:#08295E; /*background of the navigation is a navy color*/
+    background-color:#08295E;   /*background of the navigation is a navy color*/
     text-decoration: underline; /*the link becomes underlined when you hover over it*/
 }
 
+/*basically wraps all the text in white, but ends 16 px above the bottom of the screen*/
 #wrap{
 font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-  position: fixed; /*the position of the text is limited to the amount of space I give it, */
-  text-align: center;
-  top:0;
-  bottom: 16px;
-  width: 100%;
-  background-color: white;
-  overflow-y:scroll;
-  /*basically wraps all the text in white, but ends 16 px above the bottom of the screen*/
+  position: fixed;         /*the position of the text is limited to the amount of space I give it.
+                              if the amount of text is larger than the space provided, the rest of 
+                              it is hidden*/
+  text-align: center;     /*centers the text*/
+  top:0;                  /*makes the text flush with navigation bar*/
+  bottom: 16px;           /*keeps the text off the bottom of the screen by 16px*/
+  width: 100%;            /*text takes up 100% of the screen*/
+  background-color: white; /*white background color*/
+  overflow-y:scroll;        /*allows you to scroll to see the rest of the text*/
 }
   
 
 body {
-    margin: 0;
+    margin: 0; /*makes the navigation bar flush with the edge of the screen*/
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     width: 100%;
     background-color:#08295E; /*background color is navy blue*/
@@ -47,7 +50,7 @@ body {
 
 a:link, a:active, a:visited {
   text-decoration: none; 
-  color: #E3AAD6; /*text is a baby pink color*/
+  color: #E3AAD6; /*link text is a baby pink color*/
 }
 
 
